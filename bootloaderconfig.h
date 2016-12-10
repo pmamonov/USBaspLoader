@@ -151,7 +151,7 @@ static inline void  bootLoaderExit(void)
 //    PORTD = 0;                      /* undo bootLoaderInit() changes */
 }
 
-#define bootLoaderCondition()   ((PINC & (1 << JUMPER_BIT)) == 0)
+#define bootLoaderCondition()   (1)
 
 #endif /* __ASSEMBLER__ */
 
