@@ -18,7 +18,7 @@ F_CPU = 12000000
 DEVICE = atmega8
 # BOOTLOADER_ADDRESS is 1800 for 8k devices, 3800 for 16k and 7800 for 32k.
 BOOTLOADER_ADDRESS = 1800
-FUSEOPT = $(FUSEOPT_32)
+FUSEOPT = $(FUSEOPT_8)
 LOCKOPT = -U lock:w:0x2f:m
 
 PROGRAMMER = -c usbasp -P usb
